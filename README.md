@@ -1,7 +1,8 @@
 "Gal Mun-Gral" is the [Old Chinese](https://en.wikipedia.org/wiki/Reconstructions_of_Old_Chinese) pronunciation of my name
 
 ### My Visual Computing Playground
-- Real-time finite volume method (FVM) solution to the 2D Navier–Stokes equations [[demo]](https://galmungral.github.io/FVM-CFD/)[[code]](https://github.com/galmungral/FVM-CFD)
+- CT data visualization experiments [[demo 1]](https://galmungral.github.io/visible-human-gl/) [[code 1]](https://github.com/galmungral/visible-human-gl) [[demo 2]](https://galmungral.github.io/visible-human-volume/) [[code 2]](https://github.com/galmungral/visible-human-volume)
+- Real-time finite volume method (FVM) solution to the 2D Navier–Stokes equations [[demo]](https://galmungral.github.io/FVM-CFD/) [[code]](https://github.com/galmungral/FVM-CFD)
 - Reconstruction of DEM from hillshade using the Frankot-Chellappa algorithm [[demo]](https://galmungral.github.io/dem-reconstruction/) [[code]](https://github.com/galmungral/dem-reconstruction/)
 - 2D GPU path rendering based on numerical root finding [[demo]](https://galmungral.github.io/newton-vg/) [[code]](https://github.com/galmungral/newton-vg/)
 - A simple ray-traced illustration of the Mercator projection [[demo]](https://galmungral.github.io/mercator-3d/) [[code]](https://github.com/galmungral/mercator-3d/)
