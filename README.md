@@ -1,5 +1,5 @@
 ### My Visual Computing Playground
-| 2D (SVG) | 2D (Shader) | 3D (HW Accelerated) | 3D (Shader Ray Tracing) | Vision (Classical) |
+| 2D (SVG) | 2D (shader) | 3D (GL pipeline) | 3D (shader) | Vision (classical) |
 | --- | --- | --- | --- | --- |
 | [2D Navier–Stokes](https://galmungral.github.io/FVM-CFD/) | [Path rendering](https://galmungral.github.io/newton-vg/) | [Graph-based mesh distortion](https://galmungral.github.io/S2-graph/) | [Cylindrical map projection](https://galmungral.github.io/mercator-3d/) | [Frankot-Chellappa](https://galmungral.github.io/dem-reconstruction/) |
 | | [Hillshading](https://galmungral.github.io/hillshade/) | [2D waves](https://galmungral.github.io/fdm-2d/) | [Recursive ray tracing](https://galmungral.github.io/gl-raytracer/) | |
