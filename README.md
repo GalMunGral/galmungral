@@ -1,14 +1,11 @@
-"Gal Mun-Gral" is the [Old Chinese](https://en.wikipedia.org/wiki/Reconstructions_of_Old_Chinese) pronunciation of my name
-
-### My Visual Computing Playground
-- CT data visualization experiments [[demo 1]](https://galmungral.github.io/visible-human-gl/) [[code 1]](https://github.com/galmungral/visible-human-gl) [[demo 2]](https://galmungral.github.io/visible-human-volume/) [[code 2]](https://github.com/galmungral/visible-human-volume)
-- Real-time finite volume method (FVM) solution to the 2D Navier–Stokes equations [[demo]](https://galmungral.github.io/FVM-CFD/) [[code]](https://github.com/galmungral/FVM-CFD)
-- Reconstruction of DEM from hillshade using the Frankot-Chellappa algorithm [[demo]](https://galmungral.github.io/dem-reconstruction/) [[code]](https://github.com/galmungral/dem-reconstruction/)
-- 2D GPU path rendering based on numerical root finding [[demo]](https://galmungral.github.io/newton-vg/) [[code]](https://github.com/galmungral/newton-vg/)
-- A simple ray-traced illustration of the Mercator projection [[demo]](https://galmungral.github.io/mercator-3d/) [[code]](https://github.com/galmungral/mercator-3d/)
-- Volume rendering of real-time finite difference method (FDM) solution to the 3D wave equation [[demo]](https://galmungral.github.io/fdm-3d/) [[code]](https://github.com/galmungral/fdm-3d)
-- Real-time finite difference method (FDM) solution to the 2D wave equation [[demo]](https://galmungral.github.io/fdm-2d/) [[code]](https://github.com/galmungral/fdm-2d/)
-- A simple hillshade renderer of DEM data [[demo]](https://galmungral.github.io/hillshade/) [[code]](https://github.com/galmungral/hillshade/)
-- Real-time recursive ray tracing on GPU [[demo]](https://galmungral.github.io/gl-raytracer/) [[code]](https://github.com/galmungral/gl-raytracer/)
-- Force-directed graph layout on a closed surface  [[demo]](https://galmungral.github.io/S2-graph/)
-- A basic Tripos Mol2 file viewer [[demo]](https://galmungral.github.io/mol-renderer) [[code]](https://github.com/galmungral/mol-renderer)
+### Visual Computing Playground
+- [GPU path rendering](https://galmungral.github.io/newton-vg/)
+- [Frankot-Chellappa](https://galmungral.github.io/dem-reconstruction/)
+- [2D Navier–Stokes](https://galmungral.github.io/FVM-CFD/)
+- [Cylindrical map projection](https://galmungral.github.io/mercator-3d/)
+- CT scan [slices](https://galmungral.github.io/visible-human-gl/) and [volume](https://galmungral.github.io/visible-human-volume/)
+- [3D](https://galmungral.github.io/fdm-3d/) and [2D](https://galmungral.github.io/fdm-2d/) wave equations
+- [GPU recursive ray tracing](https://galmungral.github.io/gl-raytracer/)
+- [Hillshade](https://galmungral.github.io/hillshade/)
+- [Graph-based mesh distortion](https://galmungral.github.io/S2-graph/)
+- [MOL2](https://galmungral.github.io/mol-renderer)
