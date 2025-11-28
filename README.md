@@ -3,7 +3,7 @@
 if you are reading this, you're witnessing and participating in a miraculous feat that was only achieved very recently. written text is an unnatural technology--language is based on sound, and recording the vibrations of our vocal cords as squiggles, then decoding them with our eyes, is not what we are born to do.
 
 for millennia, humans lived passing stories and wisdom from generation to generation verbally. only a few places have invented written text independently, and only the highly privileged were able to wield this technology, this medium that externalizes our mental activities and lets them endure longer than ourselves, like a fossil, thus granting a form of immortality. how insane it would have sounded if they were told that nowadays we, the common people, can shame politicians and people in power for not being able to spell words or read a written word properly. how far we have come as a civilization--and all of that achieved in only the past century and a half.
-f
+
 what if this is just the beginning, and we're yet to realize our full potential as a civilization? what if we continue to enable the common people to externalize and preserve their mental activities? one such activity, apart from basic reading and writing, is formal logic and mathematics (especially if math is taught as proofs, not as mechanical computation, which is meant for computers), which i'd argue is not a separate subject but a part of reading and writing--and within that, programming.
 
 "that's absurd," you might say. "only the brightest minds could possibly comprehend such abstract concepts!"
