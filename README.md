@@ -8,7 +8,7 @@ for millennia, humans lived passing stories and wisdom from generation to genera
 
 "that's absurd," you might say. "only the brightest minds could possibly comprehend such abstract concepts!"
 
-and yet, consider how writing was once the exclusive domain of priests, scribes, and officials, who held knowledge as a kind of sacred power. programming today is treated in much the same way: programmers are treated like priests in the church of computation, reserved for a small class of stem people, as if only they can understand it.
+and yet, consider how writing was once the exclusive domain of priests, scribes, and officials who held knowledge as a kind of sacred power. programming today is treated in much the same way: programmers are cast as priests in the church of computation, reserved for a small class of supposedly smart people, as if only they can understand it. "STEM!" they say.
 
 let's consider another example of abstract symbolic technology: sheet music. what exactly is a cmin7sus11? what is a 1/128 note? what the hell is "sforzando piano"? and yet, there is no corner of the world that humans have walked that does not hear music. there is a distinction that we must make between music and sheet music, which is a european invention--a technology just as written text is to human language that helps preserve and communicate music. and there is the entirely separate, innate human capability to comprehend and create music. we understand rhythm intimately: our hearts beat at a regular interval, we breathe in and out, and we walk, left, right, left, right.
 
