@@ -26,9 +26,13 @@ perhaps the same applies to programming education. instead of teaching beginners
 
 of course, this is just a crude idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a symbolic, linguistic undertaking, the possibilities are limitless. the symbols, the syntax, the formal notations -- these remain our destination, the sheet music that lets us preserve and share what we've composed. but first, we must learn to hear the music.
 
-in the age of social media and generative artificial intelligence, as the old-fashioned ideals of rationality and optimism give way to cynical, nihilistic apathy, and as we wrestle with our conflicted and sometimes toxic relationship with the mind-machines of our own creation, i suggest we ask a different question: what impact does actively engaging with computation as both an introspective and externalizing process -- not endlessly scrolling social media, not mindlessly marveling at mimics of intelligence, but practicing good old programming -- have on our inner mental world, or even our very soul?
+why now?
 
-at this very moment, the music plays on in silence.
+we are fundamentally creative animals, but today social media and generative ai relentlessly strip us of that creative agency, reducing us from natural orators, musicians, and computationalists into idle, stupefied observers, marvelers, and consumers, paralyzed and unable to birth new things into the world. this is why we must sound the death knell of the priesthood of computation. especially now, in this age of disempowerment, when old ideals of rationality and optimism have given way to pernicious, cynical, nihilistic apathy.
+
+so let's ask a different question: what impact does actively engaging with computation -- not endlessly scrolling and watching and prompting, but creating and composing through good old programming, as both an introspective and externalizing process -- have on our inner mental world, or even, dare i say, our very soul?
+
+at this very moment, the music plays on in silence. 
 
 can you hear it?
 
