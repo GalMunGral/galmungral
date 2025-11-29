@@ -4,7 +4,7 @@ if you are reading this, you're witnessing and participating in a miraculous fea
 
 almost all humans who have ever lived were illiterate. for millennia, humans passed stories and wisdom from generation to generation verbally. only a few places invented written text independently, and only the privileged could wield this technology, a medium that externalizes our minds and lets them persist longer than ourselves, like a sarcophagus, granting a form of immortality. how insane it would have sounded if they were told that nowadays an average nobody can shame politicians and people in power for failing to spell or read properly. how far we have come as a civilization -- and all of that achieved in just the past century and a half!
 
-what if this is just the beginning of something far greater, and we are nowhere near realizing our true potential as a species? what if we continue the effort to encourage ordinary people to distill, externalize, and preserve their minds? not just the utterance of words, but the formal, logical and mathematical thinking, and in particular, computational thinking.
+what if this is just the beginning of something far greater, and we are nowhere near realizing our true potential as a species? what if we continue the effort to encourage ordinary people to distill, externalize, and preserve their mental processes? not just the utterance of words, but the formal, logical and mathematical thinking, and in particular, computational thinking.
 
 "that's absurd," you might say. "very few could grasp such abstract concepts!"
 
@@ -26,11 +26,9 @@ perhaps the same applies to programming education. instead of teaching beginners
 
 of course, this is just a crude idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a symbolic, linguistic undertaking, the possibilities are limitless. the symbols, the syntax, the formal notations -- these remain our destination, the sheet music that lets us preserve and share what we've composed. but first, we must learn to hear the music.
 
-in the age of social media and generative artificial intelligence, as the old-fashioned ideals of rationality and optimism give way to cynical, nihilistic apathy, and as we wrestle with our conflicted and sometimes toxic relationship with the mind-machines of our own creation, i suggest we ask a different question: what impact does actively engaging with computation as both an introspective and externalizing process -- not endlessly scrolling social media, not mindlessly marveling at mimics of intelligence, but practicing good old programming, using computers as they were originally intended -- have on our inner mental world or even our very soul? perhaps the point is never about our relationship with these machines, but about our relationship with ourselves.
+in the age of social media and generative artificial intelligence, as the old-fashioned ideals of rationality and optimism give way to cynical, nihilistic apathy, and as we wrestle with our conflicted and sometimes toxic relationship with the mind-machines of our own creation, i suggest we ask a different question: what impact does actively engaging with computation as both an introspective and externalizing process -- not endlessly scrolling social media, not mindlessly marveling at mimics of intelligence, but practicing good old programming -- have on our inner mental world, or even our very soul?
 
-what kind of society could we build if people were able to routinely examine their own mental processes, methodically reflecting on and questioning their conditions, goals, assumptions, and strategies, dredging the rational, computational treasures from the torrents of irrational emotions, all too easily manipulated and exploited by corporations,  politicians, and other such opportunists? what if people could develop such keen senses that they could more easily parse the meaning in dense and difficult texts, such as laws and scriptures, because programming has trained them to embrace struggles and obstacles as challenges to be endured and overcome, and even as rewards in themselves? what might we achieve then -- technologically, culturally, politically, spiritually?
-
-at this very moment, the music plays on in silence. it always has. it always will. the question is:
+at this very moment, the music plays on in silence.
 
 can you hear it?
 
