@@ -26,7 +26,7 @@ perhaps the same applies to programming education. instead of teaching beginners
 
 of course, this is just a crude idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a symbolic, linguistic undertaking, the possibilities are limitless. the symbols, the syntax, the formal notations -- these remain our destination, the sheet music that lets us preserve and share what we've composed. but first, we must learn to hear the music.
 
-why now, more than ever?
+so why now, more than ever?
 
 we are a fundamentally creative species, but today social media and generative ai relentlessly strip us of that creative agency, reducing us from natural orators, musicians, and computationalists into idle, stupefied observers, marvelers and consumers, paralyzed and unable to birth new things into the world. this is why we must sound the death knell of the priesthood of computation. especially now, in this age of disempowerment, when old ideals of rationality and optimism have given way to pernicious, cynical, nihilistic apathy.
 
