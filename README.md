@@ -24,7 +24,7 @@ perhaps the same applies to programming education. instead of teaching beginners
 
 "you have been programming this whole time!"
 
-of course, this is just a crude idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a symbolic, linguistic undertaking, the possibilities are limitless.
+of course, this is just a crude idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a symbolic, linguistic undertaking, the possibilities are limitless. the symbols, the syntax, the formal notations -- these remain our destination, the sheet music that lets us preserve and share what we've composed. but first, we must learn to hear the music.
 
 in the age of social media and generative artificial intelligence, as the old-fashioned ideals of rationality and optimism give way to cynical, nihilistic apathy and gratification-seeking, and as we wrestle with our conflicted and sometimes toxic relationship with the mind-machines of our own creation, i suggest we ask a different question: what impact does actively engaging with computation as both an introspective and externalizing process -- not endlessly scrolling social media, not mindlessly marveling at mimics of intelligence, but practicing good old programming, using computers as they were originally intended -- have on our inner mental world or even our very soul? perhaps the point is never about our relationship with these machines, but about our relationship with ourselves.
 
