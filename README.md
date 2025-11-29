@@ -10,7 +10,7 @@ what if this is just the beginning of something far greater, and we are nowhere 
 
 and yet, consider how writing was once the exclusive domain of priests, scribes, and officials. programming today is treated in much the same way: programmers are cast as priests in the church of computation, a special class of people granted direct access to sacred knowledge, an indispensable medium for the rest of the populace.
 
-"STEM!" they say. but i say: "let's do away with the priests!"
+"STEM!" they say. but i say: "let's do away with the priesthood!"
 
 let's consider another class of abstract symbols: sheet music. what is c#7sus4(add13)? what is a 1/128 note? and what even is “sforzando piano”? and yet, there is no corner of the world that humans have walked that does not hear music. we must distinguish between sheet music -- a technology for preserving and communicating music, and a european invention -- and the entirely separate, universal, innate human capacity to comprehend and create music.
 
