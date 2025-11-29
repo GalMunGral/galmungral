@@ -30,7 +30,9 @@ in the age of social media and generative artificial intelligence, as the old-fa
 
 what kind of society could we build if people were able to routinely examine their own mental processes, methodically reflecting on and questioning their conditions, goals, assumptions, and strategies, dredging the rational, computational treasures from the torrents of irrational emotions, all too easily manipulated and exploited by corporations,  politicians, and other such opportunists? what if people could develop such keen senses that they could more easily parse the meaning in dense and difficult texts, such as laws and scriptures, because programming has trained them to embrace struggles and obstacles as challenges to be endured and overcome, and even as rewards in themselves? what might we achieve then -- technologically, culturally, politically, spiritually?
 
-as you are reading this, the music is still playing in the silence. it has been playing. it will keep playing. the question is: can you hear it?
+as you are reading this, the music is still playing in the silence. it has been playing. it will keep playing. the question is: 
+
+can you hear it?
 
 ### my visual computing playground
 | 2d (svg) | 2d (shader) | 3d (gl pipeline) | 3d (shader) | vision (classical) |
