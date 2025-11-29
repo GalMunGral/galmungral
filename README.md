@@ -26,13 +26,13 @@ perhaps the same applies to programming education. instead of teaching beginners
 
 of course, this is just a crude idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a symbolic, linguistic undertaking, the possibilities are limitless. the symbols, the syntax, the formal notations -- these remain our destination, the sheet music that lets us preserve and share what we've composed. but first, we must learn to hear the music.
 
-why now?
+why now, more than ever?
 
-we are fundamentally creative animals, but today social media and generative ai relentlessly strip us of that creative agency, reducing us from natural orators, musicians, and computationalists into idle, stupefied observers, marvelers, and consumers, paralyzed and unable to birth new things into the world. this is why we must sound the death knell of the priesthood of computation. especially now, in this age of disempowerment, when old ideals of rationality and optimism have given way to pernicious, cynical, nihilistic apathy.
+we are a fundamentally creative species, but today social media and generative ai relentlessly strip us of that creative agency, reducing us from natural orators, musicians, and computationalists into idle, stupefied observers — marvelers and consumers, paralyzed and unable to birth new things into the world. this is why we must sound the death knell of the priesthood of computation. especially now, in this age of disempowerment, when old ideals of rationality and optimism have given way to pernicious, cynical, nihilistic apathy.
 
-so let's ask this question: what impact does actively engaging with computation -- not endlessly scrolling and watching and prompting, but creating and composing through good old programming as both an introspective and externalizing process -- have on our inner mental world, or even, dare i say, our very soul?
+so let's ask this question: what impact does actively engaging with computation -- not endlessly scrolling, watching, and prompting, but creating and composing through good old programming as both an introspective and externalizing process -- have on our inner mental world, or, dare i say, our very soul?
 
-at this very moment, the music plays on in silence. 
+at this very moment, the music plays on in silence.
 
 can you hear it?
 
