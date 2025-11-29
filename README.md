@@ -37,8 +37,17 @@ at this very moment, the music plays on in silence.
 can you hear it?
 
 ### my visual computing playground
-| 2d (svg) | 2d (shader) | 3d (gl pipeline) | 3d (shader) | vision (classical) |
-| --- | --- | --- | --- | --- |
-| [navier–stokes](https://galmungral.github.io/FVM-CFD/) | [path rendering](https://galmungral.github.io/newton-vg/) | [graph-based mesh distortion](https://galmungral.github.io/S2-graph/) | [cylindrical map projection](https://galmungral.github.io/mercator-3d/) | [frankot-chellappa](https://galmungral.github.io/dem-reconstruction/) |
-| | [hillshading](https://galmungral.github.io/hillshade/) | [terrain](https://galmungral.github.io/terrain-generator/), [2d waves](https://galmungral.github.io/fdm-2d/) | [recursive ray tracing](https://galmungral.github.io/gl-raytracer/) | |
-| | [ct slices](https://galmungral.github.io/visible-human-gl/) | [particles](https://galmungral.github.io/particle-effects/), [ball and stick](https://galmungral.github.io/mol-renderer) | [ct volume](https://galmungral.github.io/visible-human-volume/), [3d waves](https://galmungral.github.io/fdm-3d/) | |
+[navier–stokes](https://galmungral.github.io/FVM-CFD/)
+[frankot-chellappa](https://galmungral.github.io/dem-reconstruction/)
+[path rendering](https://galmungral.github.io/newton-vg/) 
+[ct volume](https://galmungral.github.io/visible-human-volume/)
+[recursive ray tracing](https://galmungral.github.io/gl-raytracer/)
+[cylindrical map projection](https://galmungral.github.io/mercator-3d/)
+[hillshading](https://galmungral.github.io/hillshade/) 
+[terrain](https://galmungral.github.io/terrain-generator/)
+[2d waves](https://galmungral.github.io/fdm-2d/)
+[3d waves](https://galmungral.github.io/fdm-3d/)
+[ct slices](https://galmungral.github.io/visible-human-gl/) 
+[particles](https://galmungral.github.io/particle-effects/)
+[graph-based mesh distortion](https://galmungral.github.io/S2-graph/)
+[ball and stick](https://galmungral.github.io/mol-renderer) 
