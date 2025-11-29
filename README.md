@@ -1,4 +1,4 @@
-## the computationalist society - a manifesto
+## the computationalist manifesto
 
 if you are reading this, you're witnessing and participating in a miraculous feat achieved only very recently in human history. written text is not built into language, but an unnatural technology -- language is based on sound, and recording the vibrations of our vocal cords as squiggles, then decoding them with our eyes, is not something we are born to do.
 
