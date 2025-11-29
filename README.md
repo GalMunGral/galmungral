@@ -49,5 +49,5 @@ can you hear it?
 [3d waves](https://galmungral.github.io/fdm-3d/)
 [ct slices](https://galmungral.github.io/visible-human-gl/) 
 [particles](https://galmungral.github.io/particle-effects/)
-[graph-based mesh distortion](https://galmungral.github.io/S2-graph/)
-[ball and stick](https://galmungral.github.io/mol-renderer) 
+[mesh distortion](https://galmungral.github.io/S2-graph/)
+[ball-and-stick](https://galmungral.github.io/mol-renderer) 
