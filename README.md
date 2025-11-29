@@ -30,7 +30,7 @@ in the age of social media and generative ai, as the old-fashioned ideals of rat
 
 what kind of society could we build if people were able to examine their own mental processes, methodically reflecting on and questioning their conditions, goals, assumptions, and strategies, dredging the rational, computational treasures from the torrents of irrational emotions, all too easily manipulated and exploited by politicians, corporations, and other opportunists? what if people could develop such keen senses that they could hear the music in dense and difficult texts, such as laws and scriptures, because programming has trained them to embrace struggles and obstacles as things to be endured and overcome rather than avoided?
 
-what might we achieve then -- technologically, culturally, politically?
+what might we achieve then -- technologically, culturally, politically, spiritually?
 
 ### my visual computing playground
 | 2d (svg) | 2d (shader) | 3d (gl pipeline) | 3d (shader) | vision (classical) |
