@@ -24,7 +24,7 @@ perhaps the same applies to programming education. instead of teaching beginners
 
 "you have been programming this whole time!"
 
-of course, this is just a crude idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a primarily symbolic, linguistic undertaking, the possibilities are limitless. the symbols, the syntax, the formal notations -- these remain our destination, the sheet music that lets us preserve and share what we've composed. but first, we must learn to hear the music.
+of course, this is just a crude idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a primarily symbolic, linguistic undertaking, the possibilities are limitless. the symbols, the syntax, the formal notations -- these remain our end goal, the sheet music that lets us preserve and share what we've composed. but first, we must learn to hear the music.
 
 so why now, more than ever?
 
