@@ -40,7 +40,7 @@ can you hear it?
 [navier–stokes](https://galmungral.github.io/FVM-CFD/)
 [frankot-chellappa](https://galmungral.github.io/dem-reconstruction/)
 [path rendering](https://galmungral.github.io/newton-vg/) 
-[ct volume](https://galmungral.github.io/visible-human-volume/)
+[volumetric path tracing](https://galmungral.github.io/visible-human-volume/)
 [recursive ray tracing](https://galmungral.github.io/gl-raytracer/)
 [cylindrical map projection](https://galmungral.github.io/mercator-3d/)
 [hillshading](https://galmungral.github.io/hillshade/) 
