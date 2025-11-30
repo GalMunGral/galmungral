@@ -2,7 +2,7 @@
 
 if you are reading this, you're witnessing and participating in a miraculous feat achieved only very recently in human history. written text is not built into language, but an invented technology -- language is based on sound, and recording the vibrations of our vocal cords as symbols, then decoding them with our eyes, is not something we are born to do.
 
-almost all humans who have ever lived were illiterate. for millennia, humans passed stories and wisdom from generation to generation verbally. only a few places invented writing independently, and only the privileged could master this technology. how insane it would have sounded to them that nowadays an ordinary person can shame politicians and people in power for failing to spell or read properly. how far we have come as a civilization -- and most of that achieved within the last hundred years!
+almost all humans who have ever lived were illiterate. for millennia, humans passed stories and wisdom from generation to generation verbally. only a few places invented writing independently, and only the privileged could master this technology. how insane it would have sounded to them that nowadays an ordinary person can shame politicians and people in power for misspelling a word or mispronouncing a character. how far we have come as a civilization -- and most of that achieved within the last hundred years!
 
 what if this is just the beginning of something far greater, and we are nowhere near realizing our true potential as a species? what if we continue the effort to encourage ordinary people to distill, externalize, and preserve their mental processes? not just the utterance of words, but the formal, logical, and mathematical thinking, and in particular, computational thinking.
 
