@@ -24,7 +24,7 @@ perhaps the same applies to programming education. instead of teaching beginners
 
 "you have been programming this whole time!"
 
-of course, this is just one idea, but the hope is to inspire you to imagine more ideas like this. i believe that once we break free from the conception of programming as a primarily symbolic, linguistic undertaking, the possibilities are limitless. the symbols, the syntax, the abstract constructs -- these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds, and then to compose the music, so that we might have something worth preserving.
+this is not a prescription, but an example to illustrate the principle that computation can be experienced before being written down as a program to be executed. to know water we need to stick our hand into a river and let it flow through our fingers, not stare at a formula and repeat: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with encoding it symbolically, the possibilities are limitless. the symbols, the syntax, the abstract constructs -- these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds, and then to compose the music, so that we might have something worth preserving.
 
 this is not an ideal to contemplate. it is a battle to be waged. so why now? why this generation?
 
