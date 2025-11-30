@@ -30,7 +30,7 @@ this is not an ideal to contemplate. it is a battle to be waged. so why now? why
 
 we are a fundamentally creative species waiting for a spark. silicon valley once brought us the promethean fire from the universities and national laboratories, but the fire has always been shielded from us in shiny crystal boxes, to be gazed upon, but not tampered with. and today social media and generative ai -- creations by the high priests of computation, in the name of progress and democracy -- relentlessly strip us of that creative agency, reducing us from natural orators, musicians, and computationalists into idle observers and consumers, marvelling, paralyzed. this is why we must sound the death knell of the priesthood of computation, especially now, in this age of disempowerment, when old ideals of rationality and optimism are giving way to cynical, nihilistic paralysis.
 
-so let's ask this question: what impact does actively engaging with computation -- not endlessly scrolling, watching, and prompting, but creating and composing through good old programming as both an introspective and externalizing process -- have on our inner mental world, or our very soul?
+so let's ask this question: what impact does actively engaging with computation -- not endlessly scrolling, watching, and prompting, but creating and composing through programming as both an introspective and externalizing process -- have on our inner mental world, or our very soul?
 
 at this very moment, the music plays on in silence.
 
