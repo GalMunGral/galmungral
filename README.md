@@ -8,9 +8,9 @@ what if this is just the beginning of something far greater, and we are nowhere 
 
 "that's absurd," you might say. "very few could grasp such abstract concepts!"
 
-and yet, consider how writing was once the exclusive domain of priests, scribes, and officials. programming today is treated in much the same way: programmers are treated as priests in the church of computation, a special class of people granted direct access to sacred knowledge, an indispensable intermediary for the rest of the populace.
+and yet, consider how writing was once the exclusive domain of priests, scribes, and officials. programming today is much the same: programmers are treated as priests in the church of computation, a special class of people granted direct access to sacred knowledge, an indispensable intermediary for the rest of the populace.
 
-"STEM!" they say, but i say: "let's do away with the priesthood!"
+"STEM!" they say. but i say: "let's do away with the priesthood!"
 
 consider another kind of abstract symbols: sheet music. what is a 1/128 note? what is "sforzando piano"? and yet, there is no corner of the world where humans have walked that does not hear music. we must distinguish between sheet music -- a technology for preserving and communicating music, and a european invention -- and the entirely separate, universal, innate human capacity to comprehend and create music.
 
