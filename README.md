@@ -37,7 +37,7 @@ at this very moment, the music plays on in silence.
 let it be heard.
 
 ### my visual computing playground
-[navier–stokes](https://galmungral.github.io/FVM-CFD/)
+[navier-stokes](https://galmungral.github.io/FVM-CFD/)
 [frankot-chellappa](https://galmungral.github.io/dem-reconstruction/)
 [path rendering](https://galmungral.github.io/newton-vg/) 
 [volumetric path tracing](https://galmungral.github.io/visible-human-volume/)
