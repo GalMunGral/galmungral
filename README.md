@@ -26,7 +26,7 @@ perhaps the same applies to programming education. instead of teaching beginners
 
 this is not a prescription, but an example to illustrate the principle that computation can be experienced before being written down as a program to be executed. to experience water is to stick our hand into a chilly stream and let it flow through our fingers -- not stare at a formula and regurgitate: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with encoding it symbolically, the possibilities are limitless. the symbols, the syntax, the abstract constructs -- these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds, and then to compose the music, so that we might have something worth preserving.
 
-this is not an ideal to contemplate. it is a battle to be waged. now.
+this is not an ideal to contemplate. it's a battle to be waged -- now.
 
 we are a fundamentally creative species waiting for a spark. silicon valley once brought us the promethean fire from the universities and national laboratories, but the fire has always been shielded from us in shiny crystal boxes, to be gazed upon, but not tampered with. and today social media and generative ai -- creations by the high priests of computation, in the name of progress and democracy -- relentlessly strip us of that creative agency, reducing us from natural orators, musicians, and computationalists into idle observers and consumers, marvelling, paralyzed. this is why we must sound the death knell of the priesthood of computation, especially now, in this age of disempowerment, when old ideals of rationality and optimism are giving way to cynical, nihilistic paralysis.
 
