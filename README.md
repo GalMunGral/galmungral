@@ -34,8 +34,6 @@ at this very moment, the music plays on in silence.
 
 let it be heard.
 
----
-
 ## chapter 1 - a visual architecture
 
 ### overview
@@ -312,11 +310,13 @@ ireg[111]: blt [1,0] [0,1] 106  // if (i < len) goto loop;
 ireg[112]: ret
 ```
 
+
+## chapter 3 - the game 
+[to be completed]
+
 ---
 
-### chapter 3 - the game [to be completed]
-
-### my visual computing playground
+## my visual computing playground
 [navier-stokes](https://galmungral.github.io/FVM-CFD/)
 [frankot-chellappa](https://galmungral.github.io/dem-reconstruction/)
 [path rendering](https://galmungral.github.io/newton-vg/) 
