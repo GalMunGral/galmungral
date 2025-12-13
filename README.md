@@ -62,7 +62,7 @@ indirect:  [[i,j]] → dreg[decode(dreg[bp+i, j])]
 
 ##### pairing function (hardware):
 ```
-encode: N -> N x N
+encode: N x N -> N
 decode: N -> N x N
 ```
 
