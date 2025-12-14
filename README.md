@@ -303,17 +303,15 @@ imem[112]: ret
 ```
 
 ## 2. the play  
-here is the stage: a syntax-free, keyboard-free programming environment where students construct programs through direct manipulation of control flow graphs and spreadsheet-like grids.
+here is the stage: a syntax-free, keyboard-free programming environment where students construct programs through direct manipulation of a spreadsheet-like grid and control flow graphs.
 
 ### 2.0. rationale
-learning programming through traditional "coding" obscures the actual computation process--the state evolution resulting from code execution. this process is imperceivable unless it has side effects. 
+experiencing computation through traditional programming obscures the most crucial experiential factor: the actual state evolution resulting from code execution, which is imperceptible unless it carries side effects. in addition, high-level block-based languages involve syntactic constructs that only appear natural because we are trained to read them. they bring other implications, such as the semantics of nested lexical environments and closures in languages like python and javascript, which confuse even professional programmers.
 
-high-level block-based languages involve arbitrary syntactic constructs that only appear natural because we are trained to read them. they also necessitate complicated semantics of nested lexical environments. dynamic languages like python and javascript add closures, which trip up even professional programmers. 
-
-by operating at a level comparable to compiler intermediate representations, cfgs and grids eliminate these barriers. there are no syntax errors because the interface only allows valid operations. control flow is self-explanatory, memory state is transparent, and the stack trace is perpetually available--debugging is free.
+by operating at a slightly lower level comparable to compiler intermediate representations, the grid representation of data and cfg representation of code eliminate these barriers. there are no syntax errors because the interface only permits valid operations. control flow is self-explanatory, memory state is transparent, and the stack trace is perpetually available--debugging is free.
 
 ### 2.1. mechanics
-the main grid visually represents `dmem`, while cfgs represent functions stored in `imem`. each cfg node represents one instruction. `pc` always points at an empty node after the last executed instruction. each cfg has a text label on its root node--collapsed view shows only the label, expanded view shows the complete graph.
+the main grid visually represents `dmem`, while cfgs represent function instructions stored in `imem`. each cfg node represents one instruction. `pc` always points at an empty node after the last executed instruction. each cfg has a text label on its root node--collapsed view shows only the label, expanded view shows the complete graph.
 
 #### 2.1.0. initialization
 a reset button clears the grid and creates a new empty cfg. users initialize parameter cells (`[0,0]`, `[0,1]`, ...) with representative concrete values, then press record to start recording mode. each action replaces the empty node at `pc` with an instruction node, executes it immediately, spawns a new empty node after it, and advances `pc`.
