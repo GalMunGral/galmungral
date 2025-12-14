@@ -36,7 +36,7 @@ let it be heard.
 
 ## chapter 1. a visual architecture
 
-this is a spreadsheet-inspired Harvard architecture with 2d addressable data memory for teaching programming fundamentals. 
+this is a spreadsheet-inspired harvard architecture with 2d addressable data memory for teaching programming fundamentals. 
 
 ### state
 ```
