@@ -231,16 +231,16 @@ fn_stack = {0, 100, 200}
 
 #### 1.7.1. stack traces
 ```
-print(f"current: {name(fn_stack[top])} at pc={pc}")
+print(f"current: {name(fn_stack[top])} at imem {pc}")
 for i in reversed(range(len(ra_stack))):
-    print(f"  from {name(fn_stack[i])} at pc={ra_stack[i]-1}")
+    print(f"  from {name(fn_stack[i])} at imem {ra_stack[i]-1}")
 ```
 example output during `factorial(3)` execution:
 ```
-current: fact at pc=109
-  from fact at pc=106
-  from fact at pc=106
-  from main at pc=2
+current: fact at imem 109
+  from fact at imem 106
+  from fact at imem 106
+  from main at imem 2
 ```
 
 ### 1.8. examples
