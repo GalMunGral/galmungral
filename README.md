@@ -338,13 +338,17 @@ once students master control flow, pointers, and algorithmic thinking, the same 
 this is not a prescription, but an example to illustrate the principle that computation can be experienced before being written down as a program to be executed. to experience water is to stick our hand into a chilly stream and let it flow through our fingers -- not stare at a formula and regurgitate: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with encoding it symbolically, the possibilities are limitless. the symbols, the syntax, the abstract constructs -- these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds, and then to compose the music, so that we might have something worth preserving.
 
 ## coda: the revolution
-so why am i writing this? because this is not an ideal to contemplate. it is a battle to be waged.
+so why am i writing this? because this is not an ideal to contemplate--it is a battle to be waged.
 
-we are a fundamentally creative species waiting for a spark. silicon valley once brought us the promethean fire from the universities and national laboratories, but the fire has always been shielded from us in shiny crystal boxes, to be gazed upon, but not tampered with. and today social media and generative ai -- creations by the high priests of computation, in the name of progress and democracy -- relentlessly strip us of that creative agency, reducing us from natural orators, musicians, and computationalists into idle observers and consumers, marvelling, paralyzed. this is why we must sound the death knell of the priesthood of computation, especially now, in this age of disempowerment, when old ideals of rationality and optimism are giving way to cynical, nihilistic despair.
+we are a fundamentally creative species, waiting for a spark. silicon valley once brought us that spark, that promethean fire from universities and national laboratories, but the fire was always shielded from us, locked in crystal boxes, to be admired, never touched. for centuries, scripture remained in latin, forbidden in common tongues, accessible only to those who mastered the sacred language and devoted themselves to the cloth. today, we decree: engage with computation only if you learn to encode your thoughts in arcane text and devote yourself to programming.
+
+we do not forbid a child from touching piano keys because they cannot play like beethoven. we do not forbid someone from picking up a pen because they cannot write like shakespeare. yet we do precisely this with computation. by conflating computational thinking with the priesthood of programming, we deny ordinary people the right to think computationally at all. we write grocery lists without being shakespeare. we hum melodies without being beethoven. why should computation demand total devotion--or none at all?
+
+today, social media and generative ai--creations of the high priests of computation, in the name of progress and democracy--relentlessly strip us of this creative agency. they reduce us from natural orators, musicians, and computationalists into idle observers, paralyzed and marveling. this is why we must sound the death knell of the priesthood of computation, especially now, in this age of disempowerment, when old ideals of rationality and optimism are giving way to cynical, nihilistic despair.
 
 at this very moment, the music plays on in silence.
 
-let it be heard.
+let it be heard. let the spark ignite.
 
 ---
 
