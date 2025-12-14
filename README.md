@@ -331,13 +331,13 @@ students develop iteratively by dragging operations and observing immediate resu
 
 ### 2.2. learning sequence
 
-#### 2.2.0. simulated robot control
+#### 2.2.0. simulated robotics
 specific cells in `main`'s stack frame are designated as motor controls, sensor inputs, or display outputs. students program a simulated robot through goal-oriented challenges with immediate feedback (navigate while avoiding obstacles, for example). this introduces control flow with no pointer indirection.
 
-#### 2.2.1. computational arithmetic
+#### 2.2.1. second course in arithmetic
 students implement multi-digit operations using only single-digit primitives, building a calculator that handles arbitrarily large numbers. multi-digit numbers are represented as arrays of single-digit integers occupying sequential cells in rows. addition and subtraction introduce conditionals (carrying/borrowing) and iteration. when students try to hard-code operations for each position, they discover this doesn't scale--naturally motivating pointers. multiplication motivates nested loops and subroutines. long division involves subroutines and recursion.
 
-#### 2.2.2. physical robots
+#### 2.2.2. physical robotics
 once students master control flow, pointers, and algorithmic thinking, the same programming model extends to physical robots using identical memory-mapped i/o.
 
 this is not a prescription, but an example to illustrate the principle that computation can be experienced before being written down as a program to be executed. to experience water is to stick our hand into a chilly stream and let it flow through our fingers -- not stare at a formula and regurgitate: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with encoding it symbolically, the possibilities are limitless. the symbols, the syntax, the abstract constructs -- these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds, and then to compose the music, so that we might have something worth preserving.
