@@ -71,15 +71,13 @@ encode(1,1) = 4      decode(4) = (1,1)
 encode(2,0) = 3      decode(3) = (2,0)
 ```
 
-### instructions (39 total)
+### instructions
 
-#### load (2)
+#### data movement
 ```
 1.  loadi [i,j] r              // dmem[bp+i,j] = r
 2.  loadi [[i,j]] r            // dmem[decode(dmem[bp+i,j])] = r
-```
-#### move (4)
-```
+
 3.  mov [i,j] [k,l]            // dmem[bp+i,j] = dmem[bp+k,l]
 4.  mov [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] = dmem[bp+k,l]
 5.  mov [i,j] [[k,l]]          // dmem[bp+i,j] = dmem[decode(dmem[bp+k,l])]
@@ -112,7 +110,7 @@ encode(2,0) = 3      decode(3) = (2,0)
 25. mod [i,j] [[k,l]]          // dmem[bp+i,j] %= dmem[decode(dmem[bp+k,l])]
 26. mod [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] %= dmem[decode(dmem[bp+k,l])]
 ```
-#### pointers (2)
+#### addressing
 
 2D addressing requires encoding (row, col) pairs into single values for indirection. 
 These instructions create and manipulate encoded pointers.
@@ -123,7 +121,7 @@ These instructions create and manipulate encoded pointers.
                                // (r,c) = decode(dmem[bp+i,j])
                                // dmem[bp+i,j] = encode(r, c+n)
 ```
-#### branches (9)
+#### control
 ```
 29. blt [i,j] [k,l] addr       // if dmem[bp+i,j] < dmem[bp+k,l], pc = addr
 30. blt [[i,j]] [k,l] addr     // if dmem[decode(dmem[bp+i,j])] < dmem[bp+k,l], pc = addr
@@ -136,9 +134,7 @@ These instructions create and manipulate encoded pointers.
 36. beq [[i,j]] [[k,l]] addr   // if dmem[decode(dmem[bp+i,j])] == dmem[decode(dmem[bp+k,l])], pc = addr
 
 37. br addr                    // pc = addr
-```
-#### control (2)
-```
+
 38. call label                 // push(ra_stack, pc+1)
                                // push(bp_stack, bp + imem[top(fn_stack)])
                                // push(fn_stack, label)
