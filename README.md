@@ -345,9 +345,11 @@ this is not a prescription, but an example to illustrate the principle that comp
 ## 3. the descent
 so why am i writing this? because this is not an ideal to contemplate.
 
-silicon valley once brought us the promethean fire from universities and national laboratories, but the fire has always been shielded from us, locked in crystal boxes, to be admired, never touched. for centuries, scripture remained in latin, forbidden to be rendered in common tongues, accessible only to those who mastered the sacred language and devoted themselves to the cloth. today, they decree: do not engage with computation unless you revere its arcane symbols and devote yourself to the craft.
+for centuries, scripture remained in latin, forbidden to be rendered in common tongues, accessible only to those who mastered the sacred language and devoted themselves to the cloth. today, they decree: do not engage with computation unless you revere its arcane symbols and devote yourself to the craft.
 
-we do not forbid a child from touching piano keys because they cannot play like beethoven. we do not forbid someone from picking up a pen because they cannot write like shakespeare. yet we do precisely this with computation. by conflating computational thinking with the priesthood of programming, we deny ordinary people the right to think computationally at all. we write grocery lists without being shakespeare. we hum melodies without being beethoven. why should computation demand total devotion--or none at all?
+we do not forbid a child from touching piano keys because they cannot play like beethoven. we do not forbid someone from picking up a pen because they cannot write like shakespeare. 
+
+yet we do precisely this with computation. by conflating computational thinking with the priesthood of programming, we deny ordinary people the right to think computationally at all. we write grocery lists without being shakespeare. we hum melodies without being beethoven. why should computation demand total devotion--or none at all?
 
 we are all made to create. but today, the most mesmerizing creation of the high priests of computation whispers the oldest lie: “you will not toil. you need not understand. speak, and you shall create as gods create.” but in reaching for this temptation, we forsake our humanity. for too long, computation has been shrouded behind the veil, kept in the temple, its mysteries handed down by priests but never directly witnessed. it must descend--become incarnate in our hands, our gestures, our bodies. we must take it in, make it ours. the word must become flesh.
 
