@@ -34,30 +34,26 @@ at this very moment, the music plays on in silence.
 
 let it be heard.
 
-## chapter 1 - a visual architecture
+## chapter 1. a visual architecture
 
-### overview
+this is a spreadsheet-inspired Harvard architecture with 2d addressable data memory for teaching programming fundamentals. 
 
-a spreadsheet-inspired visual architecture for teaching programming fundamentals.
-
-#### state
-
+### state
 ```
-dreg[row, col]: N x N -> R     // 2D data registers
-ireg[addr]: N -> Instruction   // 1D instruction storage
+dmem[row, col]: N x N ->  R    // data memory
+imem[addr]: N -> instruction   // instruction memory
 bp_stack: Stack(N)             // base pointer stack
 ra_stack: Stack(N)             // return address stack
 fn_stack: Stack(N)             // function address stack
 pc: N                          // program counter
 ```
 
-#### addressing
-
+### addressing
 ```
 bp = top(bp_stack)
 
-direct:    [i,j] → dreg[bp+i, j]
-indirect:  [[i,j]] → dreg[decode(dreg[bp+i, j])]
+direct:    [i,j] → dmem[bp+i, j]
+indirect:  [[i,j]] → dmem[decode(dmem[bp+i, j])]
 ```
 
 ##### pairing function (hardware):
@@ -75,71 +71,76 @@ encode(1,1) = 4      decode(4) = (1,1)
 encode(2,0) = 3      decode(3) = (2,0)
 ```
 
-#### instructions
+### instructions (39 total)
 
-##### data movement
+#### load (2)
 ```
-1.  loadi [i,j] r              // dreg[bp+i,j] = r
-2.  loadi [[i,j]] r            // dreg[decode(dreg[bp+i,j])] = r
-
-3.  mov [i,j] [k,l]            // dreg[bp+i,j] = dreg[bp+k,l]
-4.  mov [[i,j]] [k,l]          // dreg[decode(dreg[bp+i,j])] = dreg[bp+k,l]
-5.  mov [i,j] [[k,l]]          // dreg[bp+i,j] = dreg[decode(dreg[bp+k,l])]
-6.  mov [[i,j]] [[k,l]]        // dreg[decode(dreg[bp+i,j])] = dreg[decode(dreg[bp+k,l])]
+1.  loadi [i,j] r              // dmem[bp+i,j] = r
+2.  loadi [[i,j]] r            // dmem[decode(dmem[bp+i,j])] = r
 ```
-##### arithmetic
+#### move (4)
 ```
-7.  add [i,j] [k,l]            // dreg[bp+i,j] += dreg[bp+k,l]
-8.  add [[i,j]] [k,l]          // dreg[decode(dreg[bp+i,j])] += dreg[bp+k,l]
-9.  add [i,j] [[k,l]]          // dreg[bp+i,j] += dreg[decode(dreg[bp+k,l])]
-10. add [[i,j]] [[k,l]]        // dreg[decode(dreg[bp+i,j])] += dreg[decode(dreg[bp+k,l])]
-
-11. sub [i,j] [k,l]            // dreg[bp+i,j] -= dreg[bp+k,l]
-12. sub [[i,j]] [k,l]          // dreg[decode(dreg[bp+i,j])] -= dreg[bp+k,l]
-13. sub [i,j] [[k,l]]          // dreg[bp+i,j] -= dreg[decode(dreg[bp+k,l])]
-14. sub [[i,j]] [[k,l]]        // dreg[decode(dreg[bp+i,j])] -= dreg[decode(dreg[bp+k,l])]
-
-15. mul [i,j] [k,l]            // dreg[bp+i,j] *= dreg[bp+k,l]
-16. mul [[i,j]] [k,l]          // dreg[decode(dreg[bp+i,j])] *= dreg[bp+k,l]
-17. mul [i,j] [[k,l]]          // dreg[bp+i,j] *= dreg[decode(dreg[bp+k,l])]
-18. mul [[i,j]] [[k,l]]        // dreg[decode(dreg[bp+i,j])] *= dreg[decode(dreg[bp+k,l])]
-
-19. div [i,j] [k,l]            // dreg[bp+i,j] /= dreg[bp+k,l]
-20. div [[i,j]] [k,l]          // dreg[decode(dreg[bp+i,j])] /= dreg[bp+k,l]
-21. div [i,j] [[k,l]]          // dreg[bp+i,j] /= dreg[decode(dreg[bp+k,l])]
-22. div [[i,j]] [[k,l]]        // dreg[decode(dreg[bp+i,j])] /= dreg[decode(dreg[bp+k,l])]
-
-23. mod [i,j] [k,l]            // dreg[bp+i,j] %= dreg[bp+k,l]
-24. mod [[i,j]] [k,l]          // dreg[decode(dreg[bp+i,j])] %= dreg[bp+k,l]
-25. mod [i,j] [[k,l]]          // dreg[bp+i,j] %= dreg[decode(dreg[bp+k,l])]
-26. mod [[i,j]] [[k,l]]        // dreg[decode(dreg[bp+i,j])] %= dreg[decode(dreg[bp+k,l])]
+3.  mov [i,j] [k,l]            // dmem[bp+i,j] = dmem[bp+k,l]
+4.  mov [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] = dmem[bp+k,l]
+5.  mov [i,j] [[k,l]]          // dmem[bp+i,j] = dmem[decode(dmem[bp+k,l])]
+6.  mov [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] = dmem[decode(dmem[bp+k,l])]
 ```
-
-##### addressing
+#### arithmetic (20)
 ```
-27. ptr [i,j] [k,l]            // dreg[bp+i,j] = encode(bp+k, l)
+7.  add [i,j] [k,l]            // dmem[bp+i,j] += dmem[bp+k,l]
+8.  add [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] += dmem[bp+k,l]
+9.  add [i,j] [[k,l]]          // dmem[bp+i,j] += dmem[decode(dmem[bp+k,l])]
+10. add [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] += dmem[decode(dmem[bp+k,l])]
 
-28. ptradd [i,j] [k,l]         // n = dreg[bp+k,l]
-                               // (r,c) = decode(dreg[bp+i,j])
-                               // dreg[bp+i,j] = encode(r, c+n)
+11. sub [i,j] [k,l]            // dmem[bp+i,j] -= dmem[bp+k,l]
+12. sub [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] -= dmem[bp+k,l]
+13. sub [i,j] [[k,l]]          // dmem[bp+i,j] -= dmem[decode(dmem[bp+k,l])]
+14. sub [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] -= dmem[decode(dmem[bp+k,l])]
+
+15. mul [i,j] [k,l]            // dmem[bp+i,j] *= dmem[bp+k,l]
+16. mul [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] *= dmem[bp+k,l]
+17. mul [i,j] [[k,l]]          // dmem[bp+i,j] *= dmem[decode(dmem[bp+k,l])]
+18. mul [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] *= dmem[decode(dmem[bp+k,l])]
+
+19. div [i,j] [k,l]            // dmem[bp+i,j] /= dmem[bp+k,l]
+20. div [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] /= dmem[bp+k,l]
+21. div [i,j] [[k,l]]          // dmem[bp+i,j] /= dmem[decode(dmem[bp+k,l])]
+22. div [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] /= dmem[decode(dmem[bp+k,l])]
+
+23. mod [i,j] [k,l]            // dmem[bp+i,j] %= dmem[bp+k,l]
+24. mod [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] %= dmem[bp+k,l]
+25. mod [i,j] [[k,l]]          // dmem[bp+i,j] %= dmem[decode(dmem[bp+k,l])]
+26. mod [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] %= dmem[decode(dmem[bp+k,l])]
 ```
+#### pointers (2)
 
-##### control
+2D addressing requires encoding (row, col) pairs into single values for indirection. 
+These instructions create and manipulate encoded pointers.
 ```
-29. blt [i,j] [k,l] addr       // if dreg[bp+i,j] < dreg[bp+k,l], pc = addr
-30. blt [[i,j]] [k,l] addr     // if dreg[decode(dreg[bp+i,j])] < dreg[bp+k,l], pc = addr
-31. blt [i,j] [[k,l]] addr     // if dreg[bp+i,j] < dreg[decode(dreg[bp+k,l])], pc = addr
-32. blt [[i,j]] [[k,l]] addr   // if dreg[decode(dreg[bp+i,j])] < dreg[decode(dreg[bp+k,l])], pc = addr
+27. ptr [i,j] [k,l]            // dmem[bp+i,j] = encode(bp+k, l)
 
-33. beq [i,j] [k,l] addr       // if dreg[bp+i,j] == dreg[bp+k,l], pc = addr
-34. beq [[i,j]] [k,l] addr     // if dreg[decode(dreg[bp+i,j])] == dreg[bp+k,l], pc = addr
-35. beq [i,j] [[k,l]] addr     // if dreg[bp+i,j] == dreg[decode(dreg[bp+k,l])], pc = addr
-36. beq [[i,j]] [[k,l]] addr   // if dreg[decode(dreg[bp+i,j])] == dreg[decode(dreg[bp+k,l])], pc = addr
+28. ptradd [i,j] [k,l]         // n = dmem[bp+k,l]
+                               // (r,c) = decode(dmem[bp+i,j])
+                               // dmem[bp+i,j] = encode(r, c+n)
+```
+#### branches (9)
+```
+29. blt [i,j] [k,l] addr       // if dmem[bp+i,j] < dmem[bp+k,l], pc = addr
+30. blt [[i,j]] [k,l] addr     // if dmem[decode(dmem[bp+i,j])] < dmem[bp+k,l], pc = addr
+31. blt [i,j] [[k,l]] addr     // if dmem[bp+i,j] < dmem[decode(dmem[bp+k,l])], pc = addr
+32. blt [[i,j]] [[k,l]] addr   // if dmem[decode(dmem[bp+i,j])] < dmem[decode(dmem[bp+k,l])], pc = addr
+
+33. beq [i,j] [k,l] addr       // if dmem[bp+i,j] == dmem[bp+k,l], pc = addr
+34. beq [[i,j]] [k,l] addr     // if dmem[decode(dmem[bp+i,j])] == dmem[bp+k,l], pc = addr
+35. beq [i,j] [[k,l]] addr     // if dmem[bp+i,j] == dmem[decode(dmem[bp+k,l])], pc = addr
+36. beq [[i,j]] [[k,l]] addr   // if dmem[decode(dmem[bp+i,j])] == dmem[decode(dmem[bp+k,l])], pc = addr
 
 37. br addr                    // pc = addr
-
+```
+#### control (2)
+```
 38. call label                 // push(ra_stack, pc+1)
-                               // push(bp_stack, bp + ireg[top(fn_stack)])
+                               // push(bp_stack, bp + imem[top(fn_stack)])
                                // push(fn_stack, label)
                                // pc = label+1
 
@@ -148,21 +149,20 @@ encode(2,0) = 3      decode(3) = (2,0)
                                // pc = pop(ra_stack)
 ```
 
-
-#### function structure
-
+### function structure
 ```
-ireg[addr]:     frame_size (N)
-ireg[addr+1]:   instruction_1
-ireg[addr+2]:   instruction_2
+imem[addr]:     frame_size (N)
+imem[addr+1]:   instruction_1
+imem[addr+2]:   instruction_2
 ...
 ```
 
-#### data layout
+### data layout
 
-variables may be placed in any cell. multiple variables may occupy the same row. arrays must grow horizontally across columns.
+variables may be placed in any cell. multiple variables may occupy the same row. 
+arrays must grow horizontally across columns.
 
-##### example
+example:
 ```
      col0     col1     col2     col3     col4     col5
 row0 [x:5]    [y:3]    [sum:8]                            // multiple scalars in one row
@@ -170,72 +170,66 @@ row1 [arr0]   [arr1]   [arr2]   [arr3]   [arr4]           // array grows horizon
 row2 [i:0]    [ptr]    [temp]                             // loop variables
 ```
 
-#### execution model
+### execution model
 
-##### initialization
+initialization:
 ```
 bp_stack = {0}
 ra_stack = {}
 fn_stack = {0}
 pc = 1
 ```
-
-##### execution loop
+execution loop:
 ```
 while not halted:
-    instruction = ireg[pc]
+    instruction = imem[pc]
     execute(instruction)
     if not branched:
         pc = pc + 1
 ```
 
-#### calling convention
+### calling convention
 
-##### parameter passing (caller with frame size N)
+parameter passing (caller with frame size N):
 - parameter 0: `[N, 0]`
 - parameter 1: `[N, 1]`
 - parameter n: `[N, n]`
 
-###### pass by value
-use `mov [N, n] [i,j]` to copy nth parameter.
+pass by value: use `mov [N, n] [i,j]` to copy nth parameter.
 
-###### pass by reference
-use `ptr [N, n] [i,j]` to pass pointer as nth parameter.
+pass by reference: use `ptr [N, n] [i,j]` to pass pointer as nth parameter.
 
-##### parameter access (callee)
+parameter access (callee):
 - parameter 0: `[0, 0]`
 - parameter 1: `[0, 1]`
 - parameter n: `[0, n]`
 
-##### return value (callee)
-`[0, n]` for some designated column n
+return value (callee):
+- return value: `[0, n]` for some designated column n
 
-##### return value access (caller with frame size N)
-`[N, n]` after call returns
+return value access (caller with frame size N):
+- return value: `[N, n]` after call returns
 
-#### stack frames
+### stack frames
 
-when main (frame 2) calls f (frame 3) calls g (frame 4):
-
+when main (frame size 2) calls f (frame size 3), which in turn calls g (frame size 4)
 ```
-dreg rows 0-1:   main (bp=0)
-dreg rows 2-4:   f (bp=2)
-dreg rows 5-8:   g (bp=5)
+dmem rows 0-1:   main (bp=0)
+dmem rows 2-4:   f (bp=2)
+dmem rows 5-8:   g (bp=5)
 
 bp_stack = {0, 2, 5}
 ra_stack = {3, 102}
 fn_stack = {0, 100, 200}
 ```
 
-#### stack traces
-
+### stack traces
 ```
 print(f"current: {name(fn_stack[top])} at pc={pc}")
 for i in reversed(range(len(ra_stack))):
     print(f"  from {name(fn_stack[i])} at pc={ra_stack[i]-1}")
 ```
-
-**example output during factorial(3) execution:**
+example output during factorial(3) execution:
 ```
 current: fact at pc=109
   from fact at pc=106
@@ -246,70 +240,67 @@ current: fact at pc=109
 ### examples
 
 #### example 1: factorial
-
 ```
 main:
-ireg[0]:  0                     // // frame size
-ireg[1]:  loadi [0,0] 5.0       // n = 5;
-ireg[2]:  mov [0,1] [0,0]       // param 0 = n;
-ireg[3]:  call 100              // fact(n);
-ireg[4]:  halt                  // result in [0,1]
+imem[0]:  0                     // // frame size
+imem[1]:  loadi [0,0] 5.0       // n = 5;
+imem[2]:  mov [0,1] [0,0]       // param 0 = n;
+imem[3]:  call 100              // fact(n);
+imem[4]:  halt                  // result in [0,1]
 
 fact:
-ireg[100]: 2                    // // frame size
-ireg[101]: loadi [1,0] 1.0      // temp = 1;
-ireg[102]: blt [0,0] [1,0] 114  // if (n < 1) goto base;
-ireg[103]: beq [0,0] [1,0] 114  // if (n == 1) goto base;
-ireg[104]: mov [2,0] [0,0]      // param 0 = n;
-ireg[105]: loadi [1,0] 1.0      // temp = 1;
-ireg[106]: sub [2,0] [1,0]      // param 0 = n - 1;
-ireg[107]: call 100             // fact(n-1);
-ireg[108]: loadi [0,1] 0.0      // result = 0;
-ireg[109]: add [0,1] [0,0]      // result = n;
-ireg[110]: mul [0,1] [2,1]      // result = n * fact(n-1);
-ireg[111]: ret                  // return result;
+imem[100]: 2                    // // frame size
+imem[101]: loadi [1,0] 1.0      // temp = 1;
+imem[102]: blt [0,0] [1,0] 114  // if (n < 1) goto base;
+imem[103]: beq [0,0] [1,0] 114  // if (n == 1) goto base;
+imem[104]: mov [2,0] [0,0]      // param 0 = n;
+imem[105]: loadi [1,0] 1.0      // temp = 1;
+imem[106]: sub [2,0] [1,0]      // param 0 = n - 1;
+imem[107]: call 100             // fact(n-1);
+imem[108]: loadi [0,1] 0.0      // result = 0;
+imem[109]: add [0,1] [0,0]      // result = n;
+imem[110]: mul [0,1] [2,1]      // result = n * fact(n-1);
+imem[111]: ret                  // return result;
 base:
-ireg[114]: loadi [0,1] 1.0      // result = 1;
-ireg[115]: ret                  // return result;
+imem[114]: loadi [0,1] 1.0      // result = 1;
+imem[115]: ret                  // return result;
 ```
 
 #### example 2: prefix sum
-
 ```
 main:
-ireg[0]:  2                     // // frame size
-ireg[1]:  loadi [0,0] 10.0      // array[0] = 10;
-ireg[2]:  loadi [0,1] 20.0      // array[1] = 20;
-ireg[3]:  loadi [0,2] 30.0      // array[2] = 30;
-ireg[4]:  loadi [0,3] 40.0      // array[3] = 40;
-ireg[5]:  loadi [0,4] 50.0      // array[4] = 50;
-ireg[6]:  loadi [0,5] 60.0      // array[5] = 60;
-ireg[7]:  loadi [0,6] 70.0      // array[6] = 70;
-ireg[8]:  loadi [0,7] 80.0      // array[7] = 80;
-ireg[9]:  loadi [0,8] 90.0      // array[8] = 90;
-ireg[10]: loadi [0,9] 100.0     // array[9] = 100;
-ireg[11]: ptr [2,0] [0,0]       // param 0 = &array[0];
-ireg[12]: loadi [2,1] 10.0      // param 1 = 10;
-ireg[13]: call 100              // prefix_sum(ptr, len);
-ireg[14]: halt
+imem[0]:  2                     // // frame size
+imem[1]:  loadi [0,0] 10.0      // array[0] = 10;
+imem[2]:  loadi [0,1] 20.0      // array[1] = 20;
+imem[3]:  loadi [0,2] 30.0      // array[2] = 30;
+imem[4]:  loadi [0,3] 40.0      // array[3] = 40;
+imem[5]:  loadi [0,4] 50.0      // array[4] = 50;
+imem[6]:  loadi [0,5] 60.0      // array[5] = 60;
+imem[7]:  loadi [0,6] 70.0      // array[6] = 70;
+imem[8]:  loadi [0,7] 80.0      // array[7] = 80;
+imem[9]:  loadi [0,8] 90.0      // array[8] = 90;
+imem[10]: loadi [0,9] 100.0     // array[9] = 100;
+imem[11]: ptr [2,0] [0,0]       // param 0 = &array[0];
+imem[12]: loadi [2,1] 10.0      // param 1 = 10;
+imem[13]: call 100              // prefix_sum(ptr, len);
+imem[14]: halt
 
 prefix_sum:
-ireg[100]: 3                    // // frame size
-ireg[101]: loadi [1,0] 1.0      // i = 1;
-ireg[102]: mov [2,0] [0,0]      // prev = arr_ptr;
-ireg[103]: mov [2,1] [0,0]      // curr = arr_ptr;
-ireg[104]: loadi [1,1] 1.0      // temp = 1;
-ireg[105]: ptradd [2,1] [1,1]   // curr++;
+imem[100]: 3                    // // frame size
+imem[101]: loadi [1,0] 1.0      // i = 1;
+imem[102]: mov [2,0] [0,0]      // prev = arr_ptr;
+imem[103]: mov [2,1] [0,0]      // curr = arr_ptr;
+imem[104]: loadi [1,1] 1.0      // temp = 1;
+imem[105]: ptradd [2,1] [1,1]   // curr++;
 loop:
-ireg[106]: add [[2,1]] [[2,0]]  // *curr += *prev;
-ireg[107]: loadi [1,1] 1.0      // temp = 1;
-ireg[108]: ptradd [2,0] [1,1]   // prev++;
-ireg[109]: ptradd [2,1] [1,1]   // curr++;
-ireg[110]: add [1,0] [1,1]      // i++;
-ireg[111]: blt [1,0] [0,1] 106  // if (i < len) goto loop;
-ireg[112]: ret
+imem[106]: add [[2,1]] [[2,0]]  // *curr += *prev;
+imem[107]: loadi [1,1] 1.0      // temp = 1;
+imem[108]: ptradd [2,0] [1,1]   // prev++;
+imem[109]: ptradd [2,1] [1,1]   // curr++;
+imem[110]: add [1,0] [1,1]      // i++;
+imem[111]: blt [1,0] [0,1] 106  // if (i < len) goto loop;
+imem[112]: ret
 ```
-
 
 ## chapter 3 - the game 
 [to be completed]
