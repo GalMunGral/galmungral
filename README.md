@@ -1,5 +1,5 @@
-# the computationalist manifesto
-## 0. preface
+# the computationalist triptych
+## 0. the manifesto
 if you are reading this, you're witnessing and participating in a miraculous feat achieved only very recently in human history. written text is not built into language, but an invented technology -- language is based on sound, and recording the vibrations of our vocal cords as symbols, then decoding them with our eyes, is not something we are born to do.
 
 almost all humans who have ever lived were illiterate. for millennia, humans passed stories and wisdom from generation to generation verbally. only a few places invented writing independently, and only the privileged could master this technology. how insane it would have sounded to them that nowadays an ordinary person can shame politicians and people in power for misspelling a word or mispronouncing a character. how far we have come as a civilization -- and most of that achieved within the last hundred years!
@@ -34,9 +34,9 @@ at this very moment, the music plays on in silence.
 
 let it be heard.
 
-## 1. a visual architecture
+## 1. the architecture
 
-this is a spreadsheet-inspired harvard architecture with 2d addressable data memory for teaching programming fundamentals. 
+a spreadsheet-inspired harvard architecture with 2d addressable data memory for teaching programming fundamentals
 
 ### 1.0. state
 ```
@@ -309,7 +309,41 @@ imem[112]: ret
 ```
 
 ## 2. the game 
-[to be completed]
+a syntax-free, keyboard-free programming environment where students build programs through direct manipulation of control flow graphs and concrete execution on a spreadsheet-like grid
+
+### 2.0. rationale
+learning programming through traditional "coding" obscures the actual computation process—the state evolution resulting from code execution. this process is imperceivable unless it has side effects. 
+
+high-level block-based languages involve arbitrary syntactic constructs that only appear natural because we are trained to read them. they also necessitate complicated semantics of nested lexical environments. dynamic languages like python and javascript add closures, which trip up even professional programmers. 
+
+by operating at a level comparable to compiler intermediate representations, cfgs and grids eliminate these barriers. there are no syntax errors because the interface only allows valid operations. control flow is self-explanatory, memory state is transparent, and the stack trace is perpetually available—debugging is free.
+
+### 2.1. mechanics
+the main grid visually represents `dmem`, while cfgs represent functions stored in `imem`. each cfg node represents one instruction. `pc` always points at an empty node after the last executed instruction. each cfg has a text label on its root node—collapsed view shows only the label, expanded view shows the complete graph.
+
+#### 2.1.0. initialization
+a reset button clears the grid and creates a new empty cfg. users initialize parameter cells (`[0,0]`, `[0,1]`, ...) with representative concrete values, then press record to start recording mode. each action replaces the empty node at `pc` with an instruction node, executes it immediately, spawns a new empty node after it, and advances `pc`.
+
+#### 2.1.1. operations (all start with drag-and-drop)
+- `loadi`: click a cell and adjust a slider to pick the value (range 0-100)
+- `mov`, `add`, `sub`, `mul`, `div`, `ptr`, `ptradd`: drag the second cell into the first, then select the operation from a wheel. for pointers, visual arrows and highlight frames indicate the referent. the system remembers when a cell is used as a pointer—all subsequent operations (except `ptradd`) use indirect addressing `[[]]`
+- `blt`, `beq`: drag from the first cell to the second, then select `<` or `=`. initially, only the taken branch is defined. when execution reaches an undefined branch, it pauses with the actual data that triggered that path—students design the response to those specific values. this naturally guides them to test with different initial values to discover and handle all cases
+- `br`: drag the empty node at `pc` back to an earlier node
+- `call`: drag the cfg to a row below the current stack frame. a slider at the bottom adjusts the current frame size—the last row of the current frame becomes the first row of the new frame (where parameters and return values are set up)
+
+#### 2.1.2. game loop
+students develop iteratively by dragging operations and observing immediate results, pausing execution, then stepping forward/backward to reposition `pc`, and designing conditional branches incrementally as different paths are explored. testing involves clearing the spreadsheet, initializing cells with different values, and exercising different control paths. working cfgs are saved to a library with descriptive labels, becoming building blocks for complex programs.
+
+### 2.2. learning sequence
+
+#### 2.2.0. simulated robot control
+specific cells in `main`'s stack frame are designated as motor controls, sensor inputs, or display outputs. students program a simulated robot through goal-oriented challenges with immediate feedback (navigate while avoiding obstacles, for example). this introduces control flow with no pointer indirection.
+
+#### 2.2.1. computational arithmetic
+students implement multi-digit operations using only single-digit primitives, building a calculator that handles arbitrarily large numbers. multi-digit numbers are represented as arrays of single-digit integers occupying sequential cells in rows. addition and subtraction introduce conditionals (carrying/borrowing) and iteration. when students try to hard-code operations for each position, they discover this doesn't scale—naturally motivating pointers. multiplication motivates nested loops and subroutines. long division involves subroutines and recursion.
+
+#### 2.2.2. physical robots
+once students master control flow, pointers, and algorithmic thinking, the same programming model extends to physical robots using identical memory-mapped i/o.
 
 ---
 
