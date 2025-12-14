@@ -111,7 +111,7 @@ encode(2,0) = 3      decode(3) = (2,0)
 26. mod [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] %= dmem[decode(dmem[bp+k,l])]
 ```
 #### addressing
-2D addressing requires encoding (row, col) pairs into single values for indirection. 
+2d addressing requires encoding (row, col) pairs into single values for indirection. 
 ```
 27. ptr [i,j] [k,l]            // dmem[bp+i,j] = encode(bp+k, l)
 
