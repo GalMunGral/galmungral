@@ -311,7 +311,7 @@ experiencing computation through traditional programming obscures the most cruci
 by operating at a slightly lower level comparable to compiler intermediate representations, the grid representation of data and cfg representation of code eliminate these barriers. there are no syntax errors because the interface only permits valid operations. control flow is self-explanatory, memory state is transparent, and the stack trace is perpetually available--debugging is free.
 
 ### 2.1. mechanics
-the main grid visually represents `dmem`, while cfgs represent function instructions stored in `imem`. each cfg node represents one instruction. `pc` always points at an empty node after the last executed instruction. each cfg has a text label on its root node--collapsed view shows only the label, expanded view shows the complete graph.
+the main grid visually represents `dmem`, while cfgs represent function instructions stored in `imem`. each cfg node represents one instruction. `pc` always points to an empty node after the last executed instruction. each cfg has a text label on its root node--collapsed view shows only the label, expanded view shows the complete graph.
 
 #### 2.1.0. initialization
 a reset button clears the grid and creates a new empty cfg. users initialize parameter cells (`[0,0]`, `[0,1]`, ...) with representative concrete values, then press record to start recording mode. each action replaces the empty node at `pc` with an instruction node, executes it immediately, spawns a new empty node after it, and advances `pc`.
