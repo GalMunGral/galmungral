@@ -155,7 +155,7 @@ imem[addr+2]:   instruction_2
 ### 1.4. data layout
 
 variables may be placed in any cell. multiple variables may occupy the same row. 
-arrays must grow horizontally across columns. example:
+arrays must grow horizontally across columns:
 ```
      col0     col1     col2     col3     col4     col5
 row0 [x:5]    [y:3]    [sum:8]                            // multiple scalars in one row
