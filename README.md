@@ -83,7 +83,7 @@ encode(2,0) = 3      decode(3) = (2,0)
 5.  mov [i,j] [[k,l]]          // dmem[bp+i,j] = dmem[decode(dmem[bp+k,l])]
 6.  mov [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] = dmem[decode(dmem[bp+k,l])]
 ```
-#### arithmetic (20)
+#### real arithmetic
 ```
 7.  add [i,j] [k,l]            // dmem[bp+i,j] += dmem[bp+k,l]
 8.  add [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] += dmem[bp+k,l]
@@ -166,14 +166,14 @@ row2 [i:0]    [ptr]    [temp]                             // loop variables
 
 ### execution model
 
-initialization:
+#### initialization:
 ```
 bp_stack = {0}
 ra_stack = {}
 fn_stack = {0}
 pc = 1
 ```
-execution loop:
+#### execution loop:
 ```
 while not halted:
     instruction = imem[pc]
@@ -181,30 +181,41 @@ while not halted:
     if not branched:
         pc = pc + 1
 ```
-
 ### calling convention
 
-parameter passing (caller with frame size N):
-- parameter 0: `[N, 0]`
-- parameter 1: `[N, 1]`
-- parameter n: `[N, n]`
+#### parameter passing
 
-pass by value: use `mov [N, n] [i,j]` to copy nth parameter.
+parameters are placed in the caller's last row (caller's `frame_size`, 2 in this example):
+```
+mov [2,0], [0,5]       # param0 = local_var
+loadi [2,1], 10.0      # param1 = 10
+ptr [2,2], [1,0]       # param2 = &array[0]
+call func              # call with 3 parameters
+```
+#### parameter access
 
-pass by reference: use `ptr [N, n] [i,j]` to pass pointer as nth parameter.
+callee reads parameters from row 0:
+```
+# inside callee
+mov [1,0], [0,0]       # local = param0
+add [1,1], [0,1]       # local += param1
+mov [[0,2]], [1,2]     # *param2 = local
+```
+### return values
 
-parameter access (callee):
-- parameter 0: `[0, 0]`
-- parameter 1: `[0, 1]`
-- parameter n: `[0, n]`
+callee writes return value to row 0:
+```
+# inside callee
+loadi [0,3], 42.0      # return 42 in column 3
+ret
+```
 
-return value (callee):
-- return value: `[0, n]` for some designated column n
-
-return value access (caller with frame size N):
-- return value: `[N, n]` after call returns
-
-### stack frames
+caller reads from its last row after call:
+```
+call func
+mov [1,0], [2,3]       # result = return_value
+```
+### call stack
 
 when main (frame size 2) calls f (frame size 3), which in turn calls g (frame size 4)
 ```
@@ -217,13 +228,13 @@ ra_stack = {3, 102}
 fn_stack = {0, 100, 200}
 ```
 
-### stack traces
+#### stack traces
 ```
 print(f"current: {name(fn_stack[top])} at pc={pc}")
 for i in reversed(range(len(ra_stack))):
     print(f"  from {name(fn_stack[i])} at pc={ra_stack[i]-1}")
 ```
-example output during factorial(3) execution:
+example output during `factorial(3)` execution:
 ```
 current: fact at pc=109
   from fact at pc=106
