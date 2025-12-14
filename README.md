@@ -30,8 +30,7 @@ perhaps the same applies to programming education. instead of teaching beginners
 "you have been programming this whole time!"
 
 ## 1. the instrument
-
-a spreadsheet-inspired harvard architecture with 2d addressable data memory for teaching programming fundamentals
+here is the instrument: a spreadsheet-inspired harvard architecture with 2d addressable data memory--not a formal specification, but a pedagogical substrate where computation can be seen and touched.
 
 ### 1.0. state
 ```
@@ -303,8 +302,8 @@ imem[111]: blt [1,0] [0,1] 106  // if (i < len) goto loop;
 imem[112]: ret
 ```
 
-## 2. the play 
-a syntax-free, keyboard-free programming environment where students build programs through direct manipulation of control flow graphs and concrete execution on a spreadsheet-like grid
+## 2. the play  
+here is the stage: a syntax-free, keyboard-free programming environment where students construct programs through direct manipulation of control flow graphs and spreadsheet-like grids.
 
 ### 2.0. rationale
 learning programming through traditional "coding" obscures the actual computation process--the state evolution resulting from code execution. this process is imperceivable unless it has side effects. 
