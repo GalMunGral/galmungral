@@ -1,5 +1,5 @@
 # the computationalist manifesto
-## chapter 0 - preface
+## 0. preface
 if you are reading this, you're witnessing and participating in a miraculous feat achieved only very recently in human history. written text is not built into language, but an invented technology -- language is based on sound, and recording the vibrations of our vocal cords as symbols, then decoding them with our eyes, is not something we are born to do.
 
 almost all humans who have ever lived were illiterate. for millennia, humans passed stories and wisdom from generation to generation verbally. only a few places invented writing independently, and only the privileged could master this technology. how insane it would have sounded to them that nowadays an ordinary person can shame politicians and people in power for misspelling a word or mispronouncing a character. how far we have come as a civilization -- and most of that achieved within the last hundred years!
@@ -34,11 +34,11 @@ at this very moment, the music plays on in silence.
 
 let it be heard.
 
-## chapter 1. a visual architecture
+## 1. a visual architecture
 
 this is a spreadsheet-inspired harvard architecture with 2d addressable data memory for teaching programming fundamentals. 
 
-### state
+### 1.0. state
 ```
 dmem[row, col]: N x N ->  R    // data memory
 imem[addr]: N -> instruction   // instruction memory
@@ -48,7 +48,7 @@ fn_stack: Stack(N)             // function address stack
 pc: N                          // program counter
 ```
 
-### addressing
+### 1.1. addressing
 ```
 bp = top(bp_stack)
 
@@ -56,13 +56,13 @@ direct:    [i,j] → dmem[bp+i, j]
 indirect:  [[i,j]] → dmem[decode(dmem[bp+i, j])]
 ```
 
-##### pairing function (hardware):
+##### 1.1.0. pairing function (hardware):
 ```
 encode: N x N -> N
 decode: N -> N x N
 ```
 
-###### example (cantor pairing):
+###### 1.1.0.0. example (cantor pairing):
 ```
 encode(0,0) = 0      decode(0) = (0,0)
 encode(0,1) = 1      decode(1) = (0,1)
@@ -71,9 +71,9 @@ encode(1,1) = 4      decode(4) = (1,1)
 encode(2,0) = 3      decode(3) = (2,0)
 ```
 
-### instructions
+### 1.2. instructions
 
-#### data movement
+#### 1.2.0. data movement
 ```
 1.  loadi [i,j] r              // dmem[bp+i,j] = r
 2.  loadi [[i,j]] r            // dmem[decode(dmem[bp+i,j])] = r
@@ -83,7 +83,7 @@ encode(2,0) = 3      decode(3) = (2,0)
 5.  mov [i,j] [[k,l]]          // dmem[bp+i,j] = dmem[decode(dmem[bp+k,l])]
 6.  mov [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] = dmem[decode(dmem[bp+k,l])]
 ```
-#### real arithmetic
+#### 1.2.1. real arithmetic
 ```
 7.  add [i,j] [k,l]            // dmem[bp+i,j] += dmem[bp+k,l]
 8.  add [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] += dmem[bp+k,l]
@@ -110,7 +110,8 @@ encode(2,0) = 3      decode(3) = (2,0)
 25. mod [i,j] [[k,l]]          // dmem[bp+i,j] %= dmem[decode(dmem[bp+k,l])]
 26. mod [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] %= dmem[decode(dmem[bp+k,l])]
 ```
-#### addressing
+
+#### 1.2.2. addressing
 2d addressing requires encoding (row, col) pairs into single values for indirection. 
 ```
 27. ptr [i,j] [k,l]            // dmem[bp+i,j] = encode(bp+k, l)
@@ -119,7 +120,7 @@ encode(2,0) = 3      decode(3) = (2,0)
                                // (r,c) = decode(dmem[bp+i,j])
                                // dmem[bp+i,j] = encode(r, c+n)
 ```
-#### control
+#### 1.2.3. control
 ```
 29. blt [i,j] [k,l] addr       // if dmem[bp+i,j] < dmem[bp+k,l], pc = addr
 30. blt [[i,j]] [k,l] addr     // if dmem[decode(dmem[bp+i,j])] < dmem[bp+k,l], pc = addr
@@ -143,7 +144,7 @@ encode(2,0) = 3      decode(3) = (2,0)
                                // pc = pop(ra_stack)
 ```
 
-### function structure
+### 1.3. function structure
 ```
 imem[addr]:     frame_size (N)
 imem[addr+1]:   instruction_1
@@ -151,7 +152,7 @@ imem[addr+2]:   instruction_2
 ...
 ```
 
-### data layout
+### 1.4. data layout
 
 variables may be placed in any cell. multiple variables may occupy the same row. 
 arrays must grow horizontally across columns.
@@ -164,16 +165,16 @@ row1 [arr0]   [arr1]   [arr2]   [arr3]   [arr4]           // array grows horizon
 row2 [i:0]    [ptr]    [temp]                             // loop variables
 ```
 
-### execution model
+### 1.5. execution model
 
-#### initialization:
+#### 1.5.0. initialization:
 ```
 bp_stack = {0}
 ra_stack = {}
 fn_stack = {0}
 pc = 1
 ```
-#### execution loop:
+#### 1.5.1. execution loop:
 ```
 while not halted:
     instruction = imem[pc]
@@ -181,9 +182,9 @@ while not halted:
     if not branched:
         pc = pc + 1
 ```
-### calling convention
+### 1.6. calling convention
 
-#### parameter passing
+#### 1.6.0. parameter passing
 
 parameters are placed in the caller's last row (caller's `frame_size`, 2 in this example):
 ```
@@ -192,7 +193,7 @@ loadi [2,1], 10.0      # param1 = 10
 ptr [2,2], [1,0]       # param2 = &array[0]
 call func              # call with 3 parameters
 ```
-#### parameter access
+#### 1.6.1. parameter access
 
 callee reads parameters from row 0:
 ```
@@ -201,7 +202,7 @@ mov [1,0], [0,0]       # local = param0
 add [1,1], [0,1]       # local += param1
 mov [[0,2]], [1,2]     # *param2 = local
 ```
-### return values
+#### 1.6.2. return values
 
 callee writes return value to row 0:
 ```
@@ -215,7 +216,9 @@ caller reads from its last row after call:
 call func
 mov [1,0], [2,3]       # result = return_value
 ```
-### call stack
+
+### 1.7. call stack
+#### 1.7.0. stack frames
 
 when main (frame size 2) calls f (frame size 3), which in turn calls g (frame size 4)
 ```
@@ -228,7 +231,7 @@ ra_stack = {3, 102}
 fn_stack = {0, 100, 200}
 ```
 
-#### stack traces
+#### 1.7.1. stack traces
 ```
 print(f"current: {name(fn_stack[top])} at pc={pc}")
 for i in reversed(range(len(ra_stack))):
@@ -242,9 +245,9 @@ current: fact at pc=109
   from main at pc=2
 ```
 
-### examples
+### 1.8. examples
 
-#### example 1: factorial
+#### 1.8.0. example: factorial
 ```
 main:
 imem[0]:  0                     // // frame size
@@ -271,7 +274,7 @@ imem[114]: loadi [0,1] 1.0      // result = 1;
 imem[115]: ret                  // return result;
 ```
 
-#### example 2: prefix sum
+#### 1.8.1. example: prefix sum
 ```
 main:
 imem[0]:  2                     // // frame size
@@ -307,7 +310,7 @@ imem[111]: blt [1,0] [0,1] 106  // if (i < len) goto loop;
 imem[112]: ret
 ```
 
-## chapter 3 - the game 
+## 2. the game 
 [to be completed]
 
 ---
