@@ -340,7 +340,7 @@ students implement multi-digit operations using only single-digit primitives, bu
 #### 2.2.2. physical robotics
 once students master control flow, pointers, and algorithmic thinking, the same programming model extends to physical robots using identical memory-mapped i/o.
 
-this is not a prescription, but an example to illustrate the principle that computation can be experienced before being written down as a program to be executed. to experience water is to stick our hand into a chilly stream and let it flow through our fingers -- not stare at a formula and chant: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with programming, the possibilities are limitless. the symbols, the syntax, the abstract constructs -- these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds, and then to compose the music, so that we might have something worth preserving.
+this is not a prescription, but an example to illustrate the principle that computation can be experienced before being written down as a program to be executed. to experience water is to stick our hand into a chilly stream and let it flow through our fingers -- not stare at a formula and recite: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with programming, the possibilities are limitless. the symbols, the syntax, the abstract constructs -- these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds, and then to compose the music, so that we might have something worth preserving.
 
 ## 3. the descent
 so why am i writing this? because this is not an ideal to contemplate.
@@ -349,9 +349,9 @@ for centuries, scripture remained in latin, forbidden to be rendered in common t
 
 we do not forbid a child from touching piano keys because they cannot play like beethoven. we do not forbid someone from picking up a pen because they cannot write like shakespeare. 
 
-yet we do precisely this with computation. by conflating computational thinking with the priesthood of programming, we deny ordinary people the right to think computationally at all. we write grocery lists without being shakespeare. we hum melodies without being beethoven. why should computation demand total devotion--or none at all?
+yet we do precisely this with computation. by equating the computational experience with programming, we deny ordinary people the right to think computationally at all. we write birthday cards without being Shakespeare. we hum melodies without being Beethoven. why should computation demand total devotion or none at all?
 
-we are all made to create. but today, the most mesmerizing creation of the high priests of computation whispers the oldest lie: “you will not toil. you need not understand. speak, and you shall create as gods create.” but in reaching for this temptation, we forsake our humanity. for too long, computation has been shrouded behind the veil, kept in the temple, its mysteries handed down by priests but never directly witnessed. it must descend--become incarnate in our hands, our gestures, our bodies. we must take it in, make it ours. the word must become flesh.
+we are all made to create. but today, the most seductive creation of the high priests of computation whispers the oldest lie: “you will not toil. you need not understand. speak, and you shall create as gods create.” but in reaching for this temptation, we forsake our humanity. for too long, computation has been shrouded behind the veil, kept in the temple, its mysteries handed down by priests but never directly witnessed. it must descend--become incarnate in our hands, our gestures, our bodies. we must take it in, make it ours. the word must become flesh.
 
 at this very moment, the music plays on in silence. let it be heard. it will be heard.
 
