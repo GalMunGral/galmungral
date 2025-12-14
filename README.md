@@ -342,18 +342,16 @@ once students master control flow, pointers, and algorithmic thinking, the same 
 
 this is not a prescription, but an example to illustrate the principle that computation can be experienced before being written down as a program to be executed. to experience water is to stick our hand into a chilly stream and let it flow through our fingers -- not stare at a formula and regurgitate: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with encoding it symbolically, the possibilities are limitless. the symbols, the syntax, the abstract constructs -- these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds, and then to compose the music, so that we might have something worth preserving.
 
-## coda: the revolution
+## coda: the incarnation
 so why am i writing this? because this is not an ideal to contemplate.
 
-we are a creative species. all we need is a spark. silicon valley once brought us the promethean fire from universities and national laboratories, but the fire has always been shielded from us, locked in crystal boxes, to be admired, never touched. for centuries, scripture remained in latin, forbidden to be rendered in common tongues, accessible only to those who mastered the sacred language and devoted themselves to the cloth. today, they decree: do not engage with computation unless you revere its arcane symbols and devote yourself to the craft.
+silicon valley once brought us the promethean fire from universities and national laboratories, but the fire has always been shielded from us, locked in crystal boxes, to be admired, never touched. for centuries, scripture remained in latin, forbidden to be rendered in common tongues, accessible only to those who mastered the sacred language and devoted themselves to the cloth. today, they decree: do not engage with computation unless you revere its arcane symbols and devote yourself to the craft.
 
 we do not forbid a child from touching piano keys because they cannot play like beethoven. we do not forbid someone from picking up a pen because they cannot write like shakespeare. yet we do precisely this with computation. by conflating computational thinking with the priesthood of programming, we deny ordinary people the right to think computationally at all. we write grocery lists without being shakespeare. we hum melodies without being beethoven. why should computation demand total devotion--or none at all?
 
-today, generative ai--creation of the high priests of computation--whispers the oldest lie: "you will not toil. speak, and you shall create." but in reaching for this temptation, we surrender our humanity. the priests, too, have reached for the fruit. cast out, they can neither enter themselves nor allow others to enter. this is why we must sound the death knell of the priesthood of computation, especially now, in this final hour, when old ideals of rationality and optimism are giving way to cynical, nihilistic despair. for too long, computation has remained distant and untouchable, mediated by priests, handed down as law but never to be grasped. it must descend--become incarnate in our hands, our gestures, our bodies. the word must become flesh.
+we are all made to create. today, generative ai--creation of the high priests of computation--whispers the oldest lie: "you will not toil. speak, and you shall create like gods." but in reaching for this temptation, we forfeit our humanity. the priests, too, have reached for the fruit. cast out, they can neither enter themselves nor allow others to enter. this is why we must sound the death knell of the priesthood of computation, especially now, in this final hour, when old ideals of rationality and optimism are giving way to cynical, nihilistic despair. for too long, computation has been shrouded behind the veil, its mysteries handed down by priests but never directly witnessed. it must descend--become incarnate in our hands, our gestures, our bodies. we must take it in, make it ours. the word must become flesh.
 
-at this very moment, the music plays on in silence.
-
-let it be heard.
+at this very moment, the music plays on in silence. let it be heard. it will be heard.
 
 ---
 
