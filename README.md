@@ -1,4 +1,9 @@
 # the computationalist triptych
+
+> we have not tried to understand how to teach. please, give me any children from any background and i will put on the blackboard one, two, three, four, five, six, seven, eight, and underneath, the even numbers--two, four, six, eight, ten, and i will ask the child: how can there be as many even numbers as there are numbers? and i will try to have the nerve to let the silence settle, because it is out of the silence that there may come, very slowly, tentatively, god knows, the spark of the question, of the wonder, of the exasperation, which will lead, believe it or not, to that word--the word isn't important--but it will lead to the notion which descartes says is a proof of god in us: the notion of the infinite, because only that notion can help you understand why these two series are homological: one to one to one, and there will be in that room children for whom a fire will start, and it need never go out, if they are properly taught and loved, if they are not condescending to them, and they don't need to know that cantor's transfinite cardinal numbers are a damn difficult concept far beyond me--they don't need to know that--that's how his demonstration starts, and we can start there and stop at a much earlier moment with the sheer joy of it--the sheer animal joy of understanding something infinitely deep.
+>
+> -- george steiner
+
 ## 0. the word
 if you are reading this, you're witnessing and participating in a miraculous feat achieved only very recently in human history. written text is not built into language, but an invented technology -- language is based on sound, and recording the vibrations of our vocal cords as symbols, then decoding them with our eyes, is not something we are born to do.
 
@@ -52,7 +57,7 @@ encode: N x N -> N
 decode: N -> N x N
 ```
 
-###### 1.1.0.0. example (cantor pairing):
+###### 1.1.0.0. example (cantor's pairing function):
 ```
 encode(0,0) = 0      decode(0) = (0,0)
 encode(0,1) = 1      decode(1) = (0,1)
