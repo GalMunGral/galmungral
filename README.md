@@ -342,7 +342,7 @@ once students become proficient at navigating the virtual world, the same model 
 this is not a prescription, but an example to illustrate how computation can be experienced before being written down as a program to be executed. to experience water is to stick our hand into a chilly stream and let it flow through our fingers--not stare at a formula and recite: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with programming, the possibilities are limitless. the symbols, the syntax, the abstract constructs--these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds.
 
 ## 3. the descent
-so why am i writing this? because this is not an ideal to contemplate.
+so why am i writing this?
 
 for centuries, scripture remained in latin, forbidden to be rendered in common tongues, accessible only to those who mastered the sacred language and devoted themselves to the cloth. today, they decree: do not engage with computation unless you revere its arcane symbols and devote yourself to the craft.
 
