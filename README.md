@@ -30,7 +30,9 @@ perhaps the same applies to programming education. instead of teaching beginners
 "you have been programming this whole time!"
 
 ## 1. the instrument
-here is the instrument: a spreadsheet-inspired harvard architecture with 2d addressable data memory--not a formal specification, but a pedagogical substrate where computation can be seen and touched.
+here is the instrument: a spreadsheet-inspired harvard architecture with 2d addressable data memory.
+
+this section describes how the piano is built, not how it is played. learners never see these internals--nevertheless, the interactions described later are designed to instill an understanding of the machine's fundamental operations, so that if this formalism is ever revealed, it will feel natural rather than daunting.
 
 ### 1.0. state
 ```
