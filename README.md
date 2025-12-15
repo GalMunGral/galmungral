@@ -80,6 +80,8 @@ encode(2,0) = 3      decode(3) = (2,0)
 6.  mov [[i,j]] [[k,l]]        // dmem[decode(dmem[bp+i,j])] = dmem[decode(dmem[bp+k,l])]
 ```
 #### 1.2.1. real arithmetic
+note: `mod` is defined only when the second operand is an integer; otherwise, the behavior is undefined.
+
 ```
 7.  add [i,j] [k,l]            // dmem[bp+i,j] += dmem[bp+k,l]
 8.  add [[i,j]] [k,l]          // dmem[decode(dmem[bp+i,j])] += dmem[bp+k,l]
@@ -341,7 +343,7 @@ the four operations create a natural progression of increasing complexity: addit
 #### 2.2.2. physical robotics
 once students become proficient at navigating the virtual world, the same model extends to physical robots by mapping cells to their i/o.
 
-this is not a prescription, but an example to illustrate how computation can be experienced before being written down as a program to be executed. to experience water is to stick our hand into a chilly stream and let it flow through our fingers--not stare at a formula and recite: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with programming, the possibilities are limitless. the symbols, the syntax, the abstract constructs--these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds.
+this is not a prescription, but an example to illustrate how computation can be lived before it is written down, just as music is lived before it is scored. to experience water is to stick our hand into a chilly stream and let it flow through our fingers--not stare at a formula and recite: dihydrogen monoxide! i believe that once we break free from conflating experiencing computation with programming, the possibilities are limitless. the symbols, the syntax, the abstract constructs--these remain our destination, the sheet music that crystallizes what we've composed. but first, we must learn to hear the sounds.
 
 ## 3. the descent
 so why am i writing this?
@@ -352,7 +354,7 @@ we do not forbid a child from touching piano keys because they cannot play like 
 
 yet we do precisely this with computation. by equating the experience of computation with the act of programming, we deny ordinary people the right to think computationally at all. we write birthday cards without being Shakespeare. we hum melodies without being Beethoven. why should computation demand total devotion or none at all?
 
-we are all made to create. but today, the most seductive creation of the high priests of computation whispers the oldest lie: “you will not toil. you need not understand. speak, and you shall create as gods create.” but in reaching for this temptation, we forsake our humanity. for too long, computation has been shrouded behind the veil, kept in the temple, its mysteries handed down by priests but never directly witnessed. it must descend--become incarnate in our hands, our gestures, our bodies. the word must become flesh.
+we are all made to create. but today, the most seductive creation of the high priests of computation whispers the oldest lie: “you will not toil. you need not understand. speak, and you shall create as gods create.” but in reaching for this temptation, we forsake our humanity. for too long, computation has been shrouded behind the veil, kept in the temple, its mysteries handed down as laws but never directly witnessed. it must descend--become incarnate in our hands, our gestures, our bodies. the word must become flesh.
 
 the music plays in silence. hear it. it shall be heard.
 
