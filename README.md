@@ -352,7 +352,7 @@ for centuries, scripture remained in latin, forbidden to be rendered in common t
 
 we do not forbid a child from touching piano keys because they cannot play like beethoven. we do not forbid someone from picking up a pen because they cannot write like shakespeare. 
 
-yet we do precisely this with computation. by equating the experience of computation with the act of programming, we deny ordinary people the right to think computationally at all. we write birthday cards without being Shakespeare. we hum melodies without being Beethoven. why should computation demand total devotion or none at all?
+yet we do precisely this with computation. by equating the experience of computation with the act of programming, we deny ordinary people the right to think computationally at all. we write birthday cards without being shakespeare. we hum melodies without being beethoven. why should computation demand total devotion or none at all?
 
 we are all made to create. but today, the most seductive creation of the high priests of computation whispers the oldest lie: “you will not toil. you need not understand. speak, and you shall create as gods create.” but in reaching for this temptation, we forsake our humanity. for too long, computation has been shrouded behind the veil, kept in the temple, its mysteries handed down as laws but never directly witnessed. it must descend--become incarnate in our hands, our gestures, our bodies. the word must become flesh.
 
