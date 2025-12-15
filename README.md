@@ -332,7 +332,7 @@ students develop iteratively by creating instructions through drag gestures and 
 specific cells are designated as motor controls, sensor inputs, or display outputs. students program a simulated robot through goal-oriented challenges with immediate feedback (navigate while avoiding obstacles, for example). this introduces control flow with no pointer indirection.
 
 #### 2.2.1. second course in arithmetic
-students implement multi-digit operations using only single-digit primitives, building a calculator that handles arbitrarily large numbers. multi-digit numbers are represented as arrays of single-digit integers occupying sequential cells in rows. when students try hard-coding operations for each position, they discover this doesn't scale—-naturally motivating pointers (and more broadly, iterators). 
+students implement multi-digit operations using only single-digit primitives, building a calculator that handles arbitrarily large numbers. multi-digit numbers are represented as arrays of single-digit integers occupying sequential cells in rows. when students try hard-coding operations for each position, they discover this doesn't scale--naturally motivating pointers (and more broadly, iterators). 
 
 the four operations create a natural progression of increasing complexity: addition and subtraction motivate conditionals (carrying/borrowing) and iteration, multiplication motivates nested iteration and subroutines, and long division motivates subroutines and recursion.
 
